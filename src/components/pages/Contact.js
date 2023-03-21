@@ -2,11 +2,9 @@ import React from 'react';
 
 export default function Contact() {
   return (
-
-    <main>
       <article>
         <aside>
-          <h2>contact me</h2>
+          <h2>contact</h2>
         </aside>
         <section className="content justify-space-evenly" id="contact">
           <form action="#" className="contact contact-left">
@@ -18,6 +16,5 @@ export default function Contact() {
 
         </section>
       </article>
-    </main>
   );
 }

@@ -2,11 +2,10 @@ import React from 'react';
 
 export default function About() {
   return (
-    <main>
       <section>
         <article>
           <aside>
-            <h2>about me</h2>
+            <h2>about</h2>
           </aside>
           <section className="content" id="info">
             <p>Seasoned Analyst and Aspiring Full Stack Web Developer with background in Finance, Accounting, Computing Science, and with interest in Android App Development.<br /><br />
@@ -20,6 +19,5 @@ export default function About() {
           </section>
         </article>
       </section>
-    </main>
   );
 }
