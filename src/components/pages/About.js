@@ -2,16 +2,24 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+    <main>
+      <section>
+        <article>
+          <aside>
+            <h2>about me</h2>
+          </aside>
+          <section className="content" id="info">
+            <p>Seasoned Analyst and Aspiring Full Stack Web Developer with background in Finance, Accounting, Computing Science, and with interest in Android App Development.<br /><br />
+              Certified Scrum Master, dedicated  life-long learner, volunteer, and passionate woodworker.
+              Effective at combining creativity and problem solving to develop user-friendly applications or solutions to client requirements.<br /><br />
+              Known among staff for strong wit and attention to detail no matter the complexity of the project.<br /><br />
+              Excellent communication and presentation skills with team members and business stakeholders.<br /><br />
+              Resourceful, organized, and thoughtful in working in highly interdependent environments and teams
+
+            </p>
+          </section>
+        </article>
+      </section>
+    </main>
   );
 }

@@ -184,7 +184,7 @@
   /* sets up the style for the contact section of the page */
   .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin:var(--margin-var);
     padding: var(--padding-var);

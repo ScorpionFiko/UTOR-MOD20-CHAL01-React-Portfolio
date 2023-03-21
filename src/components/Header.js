@@ -36,8 +36,8 @@ export default function Header() {
 
   return (
     <header>
-      <section class="header">
-        <section id="developer" class="developer">
+      <section className="header">
+        <section id="developer" className="developer">
           <img id="devImg" src={Image} alt="" />
           <h1>Stefan Marinov</h1>
         </section>
