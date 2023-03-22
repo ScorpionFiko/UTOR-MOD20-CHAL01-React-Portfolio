@@ -2,6 +2,7 @@ import React from 'react';
 import project_data from "../../project_data";
 import { FaGithub } from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
+const images = require.context('../../images', true);
 
 
 export default function Portfolio() {
@@ -13,11 +14,10 @@ export default function Portfolio() {
             <section className="content justify-space-between" id="portfolio">
                 {
                     project_data.map((project, index) => {
-                        console.log(`"${project.src}"`)
                         return (
-                            <section className="work ">
+                            <section className="work " key={project.id}>
 
-                                <img src={require('../../images/sm-profile.jpg')} alt={project.alt} />
+                                <img src={images(`./${project.src}`)} alt={project.alt} />
                                 <section className="label">
                                     <h5>{project.name}</h5>
                                 </section>
