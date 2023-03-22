@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState,  } from 'react';
+import emailjs from '@emailjs/browser';
+import emailConfig from '../../email.config'
 
 export default function Contact() {
   const [contactForm, setContactForm] = useState({
@@ -13,33 +15,37 @@ export default function Contact() {
   });
 
 const validateInput = () => {
-  let error = {}, errorExists = false;
+  let error = {}, noErrors = true;
   if (/^$/.test(contactForm.name)) {
     error.name = "testname"
-    errorExists = true;
+    noErrors = false;
   }
   if (!/(^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$)/.test(contactForm.email)) {
     error.email = "test email"
-    errorExists = true;
+    noErrors = false;
   }
   if (!/.{15,}/.test(contactForm.message)) {
     error.message = "test message"
-    errorExists = true;
+    noErrors = false;
   }
   setErrorContactForm(error);
-  return errorExists;
+  return noErrors;
 }
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    if (validateInput()) {
+    if (!validateInput()) {
       
       return;
     }
-   
-      alert(JSON.stringify(contactForm));
-    
+    const email = await emailjs.send(emailConfig.service,emailConfig.template,{
+      message: contactForm.message,
+      reply_to: contactForm.email,
+      name: contactForm.name,
+      }, emailConfig.publicKey);
+      console.log(email.text)
+      
   }
 
   const handleChange = (event) => {
