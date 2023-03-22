@@ -8,7 +8,8 @@
   --colour-text: #ffffff;
   --border-radius-var: 50px;
   --form-border-radius-var: 20px;
-  --footer-height: 20vh;
+  --footer-height: 15vh;
+  --porfolio-link-colour: #000000;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -175,11 +176,32 @@ article .content {
   padding-top: var(--padding-var);
 }
 /* sets up the style when a user hover over an active link in the work image section */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #efefef;
+  z-index: 20;
+}
+.work:hover .overlay {
+  opacity: .75;
+}
 .work a:hover {
-  background-color: var(--colour-hover);
-  padding: 6.18px 10px 6.18px 10px;
-  display: block;
-  transition: all 0.5s ease 0s;
+  color: var(--porfolio-link-colour);
+  border-bottom: 1px solid;
+  border-radius: 0.375em
+}
+
+
+.work a {
+  color: var(--porfolio-link-colour);
+  border-bottom: 1px solid transparent;
 }
 /* sets up the style for the first projects that appear in the list of projects in the main content */
 .first {
@@ -241,7 +263,7 @@ body {
   min-height: 100vh;
 }
 main {
-  padding-bottom: 20vh;
+  padding-bottom: var(--footer-height);
 }
 /* sets up the style of the footer */
 .footer {
@@ -271,6 +293,9 @@ main {
 /* TABLET styling */
 @media screen and (max-width: 992px) {
   /* updates the banner label styling */
+  .header {
+    justify-content: center;
+  }
   .banner .label {
     bottom: 5vh;
     right: 5vh;
