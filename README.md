@@ -7,7 +7,7 @@ Repository containing the code for the Developer Portfolio using React. This is 
 - it is built using ReactJS
 - it shows all projects by the developer. Hovering on the project image allows the user to go to either the github repo or the live website.
 - it has a fully functional contact form where a user can send a message to the developer's email.
-- it proives the user with a PDF version of the developer's resume.
+- it provides the user with a PDF version of the developer's resume.
 
 The application is fully responsive and being able to be viewed on all devices.
 
@@ -55,7 +55,7 @@ The front end is designed with a mixture of Bootstrap and user defined elements.
 
 ### Backend readiness:
 
-Even though this applicatoin is front-end only, the seeds for a back-end implementation have been sown. The information for the portfolio and resume's skill section are obtained from internal arrays (to simulate data coming from a database) and displayed on the screen using the array.map method. In the future, this particular application will be further enhanced to store portfolio information in a back end database. This means that the developer will be able to log in and update information without the need to touch the code.
+Even though this application is front-end only, the seeds for a back-end implementation have been sown. The information for the portfolio and resume's skill section are obtained from internal arrays (to simulate data coming from a database) and displayed on the screen using the array.map method. In the future, this particular application will be further enhanced to store portfolio information in a back end database. This means that the developer will be able to log in and update information without the need to touch the code.
 
 ### EmailJS:
 

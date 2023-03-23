@@ -16,16 +16,16 @@ export default function Contact() {
 
 const validateInput = () => {
   let error = {}, noErrors = true;
-  if (/^$/.test(contactForm.name)) {
-    error.name = "testname"
+  if (/^$/.test(contactForm.name.trim())) {
+    error.name = "Please enter your name"
     noErrors = false;
   }
-  if (!/(^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$)/.test(contactForm.email)) {
-    error.email = "test email"
+  if (!/(^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$)/.test(contactForm.email.trim())) {
+    error.email = "Please enter valid email without trialing spaces"
     noErrors = false;
   }
-  if (!/.{15,}/.test(contactForm.message)) {
-    error.message = "test message"
+  if (!/.{15,}/.test(contactForm.message.trim())) {
+    error.message = "Please enter a message with a minimum of 15 characters in length without trailing spaces"
     noErrors = false;
   }
   setErrorContactForm(error);

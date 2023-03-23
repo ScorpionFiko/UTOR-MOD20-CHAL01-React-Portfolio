@@ -13,7 +13,7 @@ export default function Resume() {
 
         <section className="content justify-content-between" id="info">
           <div className="col-xxl-3 col-xl-4 col-lg-5 col-md-8 col-sm-11">
-          <a className="nav-link" href={resumeFile} target="_blank">Resume Download<FaRegFilePdf size={30} /></a>
+          <a className="nav-link" href={resumeFile} target="_blank" rel="noopener noreferrer">Resume Download<FaRegFilePdf size={30} /></a>
 
           </div>
        
