@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/utor-mod20-chal01-react-portfolio/static/css/main.207e1e0e.css",
-    "main.js": "/utor-mod20-chal01-react-portfolio/static/js/main.a8ba8efe.js",
+    "main.css": "/utor-mod20-chal01-react-portfolio/static/css/main.3c02cbad.css",
+    "main.js": "/utor-mod20-chal01-react-portfolio/static/js/main.e9a190a4.js",
     "static/media/utor_mod01_chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor_mod01_chal01.0009b6095bac88f6fd01.png",
     "static/media/utor-proj01-team12.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-proj01-team12.029954f031f34ebe1884.png",
     "static/media/utor-proj02-team09.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-proj02-team09.5890fc37a353d873f2e8.png",
@@ -10,15 +10,16 @@
     "static/media/utor-mod06-chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-mod06-chal01.6cd72ed29c6260fe6f30.png",
     "static/media/utor-mod05-chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-mod05-chal01.a6a407cc91088874bca8.png",
     "static/media/utor-mod14-chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-mod14-chal01.f8a1ef7946fad2172ef7.png",
+    "static/media/StefanMarinov-Resume.pdf": "/utor-mod20-chal01-react-portfolio/static/media/StefanMarinov-Resume.1ff3fbbb7c1408adec63.pdf",
     "static/media/utor-mod03-chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-mod03-chal01.d2af1a04fd7fdf70318b.png",
     "static/media/utor-mod04-chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-mod04-chal01.57df1bdeaff6959320bc.png",
     "static/media/utor-mod11-chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-mod11-chal01.b97f5bcb947be036ef34.png",
     "index.html": "/utor-mod20-chal01-react-portfolio/index.html",
-    "main.207e1e0e.css.map": "/utor-mod20-chal01-react-portfolio/static/css/main.207e1e0e.css.map",
-    "main.a8ba8efe.js.map": "/utor-mod20-chal01-react-portfolio/static/js/main.a8ba8efe.js.map"
+    "main.3c02cbad.css.map": "/utor-mod20-chal01-react-portfolio/static/css/main.3c02cbad.css.map",
+    "main.e9a190a4.js.map": "/utor-mod20-chal01-react-portfolio/static/js/main.e9a190a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.207e1e0e.css",
-    "static/js/main.a8ba8efe.js"
+    "static/css/main.3c02cbad.css",
+    "static/js/main.e9a190a4.js"
   ]
 }
