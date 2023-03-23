@@ -1,12 +1,15 @@
 import React from 'react';
+import Banner from '../../images/banner.png'
 
 export default function About() {
   return (
       <section>
+                    <img src={Banner} alt="Coding Banner" />
         <article>
           <aside>
             <h2>about</h2>
           </aside>
+
           <section className="content" id="info">
             <p>Seasoned Analyst and Aspiring Full Stack Web Developer with background in Finance, Accounting, Computing Science, and with interest in Android App Development.<br /><br />
               Certified Scrum Master, dedicated  life-long learner, volunteer, and passionate woodworker.
