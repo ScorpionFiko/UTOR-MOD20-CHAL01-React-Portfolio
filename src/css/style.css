@@ -21,6 +21,7 @@
 }
 .nav-link {
   color: var(--colour-accent);
+  border-radius: 0.375em;
 }
 
 .nav-link:focus,
@@ -291,7 +292,12 @@ main {
   border-radius: 0.375em;
 }
 /* TABLET styling */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1374px) {
+  .work {
+    width:45%;
+  }
+}
+@media screen and (max-width: 1074px) {
   /* updates the banner label styling */
   .header {
     justify-content: center;
@@ -325,6 +331,12 @@ main {
   .social-links {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 838px) {
+  .work {
+    width:100%;
   }
 }
 /* SMART PHONES */

@@ -1,21 +1,52 @@
 import React from 'react';
+import { FaRegFilePdf } from 'react-icons/fa';
+import resumeFile from "../../downloads/StefanMarinov-Resume.pdf";
+import skills_data from "../../skills_data";
 
-export default function Home() {
+export default function Resume() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
-    </div>
+    <section>
+      <article>
+        <aside>
+          <h2>Resume</h2>
+        </aside>
+
+        <section className="content justify-content-between" id="info">
+          <div className="col-xxl-3 col-xl-4 col-lg-5 col-md-8 col-sm-11">
+          <a className="nav-link" href={resumeFile} target="_blank">Resume Download<FaRegFilePdf size={30} /></a>
+
+          </div>
+       
+        </section>
+      </article>
+      <article>
+        <aside>
+          <h2>skills</h2>
+        </aside>
+
+        <section className="content justify-content-center align-items-start" id="info">
+        
+          {
+            skills_data.map((skill) => {
+              return (
+                <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-8 col-sm-11 card bg-light m-2 " key={skill.id}>
+                  <div class="card-body">
+                    <h5 class="card-title">{skill.category}</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    {
+                      skill.skills.map((item) => {
+                        return <li class="list-group-item">{item}</li>
+                      })
+                    }
+                  </ul>
+                </div>
+              );
+            })
+          }
+
+        </section>
+      </article>
+    </section>
   );
 }
