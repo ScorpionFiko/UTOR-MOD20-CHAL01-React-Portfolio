@@ -39,12 +39,23 @@ const validateInput = () => {
       
       return;
     }
-    const email = await emailjs.send(emailConfig.service,emailConfig.template,{
+    const email = emailjs.send(emailConfig.service,emailConfig.template,{
       message: contactForm.message,
       reply_to: contactForm.email,
       name: contactForm.name,
       }, emailConfig.publicKey);
       console.log(email.text)
+
+      setContactForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+      setErrorContactForm({
+        name: '',
+        email: '',
+        message: '',
+      });
       
   }
 
@@ -67,11 +78,11 @@ const validateInput = () => {
       </aside>
       <section className="content justify-space-evenly" id="contact">
         <form action="#" className="contact contact-left" onSubmit={handleFormSubmit}>
-          <input type="text" id="name" placeholder="Enter your name here" onChange={handleChange} />
+          <input type="text" id="name" value={contactForm.name} placeholder="Enter your name here" onChange={handleChange}/>
           <span className='bg-danger-subtle text-danger'>{errorContactForm.name}</span>
-          <input type="text" id="email" placeholder="Enter your email here" onChange={handleChange} />
+          <input type="text" id="email" value={contactForm.email} placeholder="Enter your email here" onChange={handleChange}/>
           <span className='bg-danger-subtle text-danger'>{errorContactForm.email}</span>
-          <textarea name="message" id="message" rows="10" placeholder="Enter your message" onChange={handleChange} ></textarea>
+          <textarea name="message" id="message" value={contactForm.message} rows="10" placeholder="Enter your message" onChange={handleChange}></textarea>
           <span className='bg-danger-subtle text-danger'>{errorContactForm.message}</span>
           <input type="submit" className="button" value="Submit" />
         </form>

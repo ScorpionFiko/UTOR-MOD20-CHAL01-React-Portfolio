@@ -24,10 +24,10 @@ export default function Portfolio() {
                                 <section className="overlay d-flex justify-content-center align-items-center">
                                     <ul className="nav flex-row justify-content-center align-items-center">
                                         <li className="nav-item m-2">
-                                            <a className="nav-link" href={project.href}><TbWorldWww size={70} /></a>
+                                            <a className="nav-link" href={project.href} target="_blank"><TbWorldWww size={70} /></a>
                                         </li>
                                         <li className="nav-item m-2">
-                                            <a className="nav-link" href={project.github}><FaGithub size={70} /></a>
+                                            <a className="nav-link" href={project.github} target="_blank"><FaGithub size={70} /></a>
                                         </li>
                                     </ul>
                                 </section>
