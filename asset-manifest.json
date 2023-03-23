@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/utor-mod20-chal01-react-portfolio/static/css/main.164fcd6c.css",
-    "main.js": "/utor-mod20-chal01-react-portfolio/static/js/main.8b77d01d.js",
+    "main.js": "/utor-mod20-chal01-react-portfolio/static/js/main.d0188862.js",
     "static/media/utor_mod01_chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor_mod01_chal01.0009b6095bac88f6fd01.png",
     "static/media/utor-proj01-team12.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-proj01-team12.029954f031f34ebe1884.png",
     "static/media/utor-proj02-team09.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-proj02-team09.5890fc37a353d873f2e8.png",
@@ -17,10 +17,10 @@
     "static/media/utor-mod11-chal01.png": "/utor-mod20-chal01-react-portfolio/static/media/utor-mod11-chal01.b97f5bcb947be036ef34.png",
     "index.html": "/utor-mod20-chal01-react-portfolio/index.html",
     "main.164fcd6c.css.map": "/utor-mod20-chal01-react-portfolio/static/css/main.164fcd6c.css.map",
-    "main.8b77d01d.js.map": "/utor-mod20-chal01-react-portfolio/static/js/main.8b77d01d.js.map"
+    "main.d0188862.js.map": "/utor-mod20-chal01-react-portfolio/static/js/main.d0188862.js.map"
   },
   "entrypoints": [
     "static/css/main.164fcd6c.css",
-    "static/js/main.8b77d01d.js"
+    "static/js/main.d0188862.js"
   ]
 }
