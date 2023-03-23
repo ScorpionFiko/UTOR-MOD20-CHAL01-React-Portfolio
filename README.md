@@ -15,7 +15,7 @@ Below is the image of the About page.
 ![SM - About](./assets/images/SM-01-About.png)
 
 Below is the image of of the Portfolio page.
-![SM - Portfolio](./assets/images/SM-02-Portfolio.pngpng)
+![SM - Portfolio](./assets/images/SM-02-Portfolio.png)
 
 Below is the image of the Contact page.
 ![SM - Contact](./assets/images/SM-03-Contact.png)
