@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/stefanma/public_html
+    - export REPOPATH=/home/stefanma/repositories/UTOR-MOD02-CHAL01-Developer-Website
+    - /bin/rm -R $DEPLOYPATH
+    - /bin/cp -a $REPOPATH/. $DEPLOYPATH/
